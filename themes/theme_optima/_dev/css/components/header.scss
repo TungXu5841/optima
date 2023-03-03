@@ -1,0 +1,8 @@
+#header {
+  position: relative;
+  z-index: 999;
+  @media(max-width: 991px){
+    z-index: 1051;
+    border-bottom: 1px solid #ebebeb;
+  }
+}
