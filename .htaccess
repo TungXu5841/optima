@@ -12,7 +12,7 @@ RewriteEngine on
 
 #Domain: localhost
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule . - [E=REWRITEBASE:/pos_optima3/]
+RewriteRule . - [E=REWRITEBASE:/optima/]
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
@@ -42,14 +42,14 @@ RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/ima
 
 #Domain: localhost
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule . - [E=REWRITEBASE:/pos_optima3/]
+RewriteRule . - [E=REWRITEBASE:/optima/]
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike2$ /pos_optima3/bike2/ [L,R]
+RewriteRule ^bike2$ /optima/bike2/ [L,R]
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike2/(.*) /pos_optima3/$1 [L]
+RewriteRule ^bike2/(.*) /optima/$1 [L]
 
 # Images
 RewriteCond %{HTTP_HOST} ^localhost$
@@ -77,14 +77,14 @@ RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/ima
 
 #Domain: localhost
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule . - [E=REWRITEBASE:/pos_optima3/]
+RewriteRule . - [E=REWRITEBASE:/optima/]
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike3$ /pos_optima3/bike3/ [L,R]
+RewriteRule ^bike3$ /optima/bike3/ [L,R]
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike3/(.*) /pos_optima3/$1 [L]
+RewriteRule ^bike3/(.*) /optima/$1 [L]
 
 # Images
 RewriteCond %{HTTP_HOST} ^localhost$
@@ -112,14 +112,14 @@ RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/ima
 
 #Domain: localhost
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule . - [E=REWRITEBASE:/pos_optima3/]
+RewriteRule . - [E=REWRITEBASE:/optima/]
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike4$ /pos_optima3/bike4/ [L,R]
+RewriteRule ^bike4$ /optima/bike4/ [L,R]
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^bike4/(.*) /pos_optima3/$1 [L]
+RewriteRule ^bike4/(.*) /optima/$1 [L]
 
 # Images
 RewriteCond %{HTTP_HOST} ^localhost$
@@ -147,14 +147,14 @@ RewriteRule ^images_ie/?([^/]+)\.(jpe?g|png|gif)$ js/jquery/plugins/fancybox/ima
 
 #Domain: localhost
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule . - [E=REWRITEBASE:/pos_optima3/]
+RewriteRule . - [E=REWRITEBASE:/optima/]
 RewriteRule ^api(?:/(.*))?$ %{ENV:REWRITEBASE}webservice/dispatcher.php?url=$1 [QSA,L]
 RewriteRule ^upload/.+$ %{ENV:REWRITEBASE}index.php [QSA,L]
 
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^watch1$ /pos_optima3/watch1/ [L,R]
+RewriteRule ^watch1$ /optima/watch1/ [L,R]
 RewriteCond %{HTTP_HOST} ^localhost$
-RewriteRule ^watch1/(.*) /pos_optima3/$1 [L]
+RewriteRule ^watch1/(.*) /optima/$1 [L]
 
 # Images
 RewriteCond %{HTTP_HOST} ^localhost$
@@ -218,6 +218,6 @@ AddType font/woff2 .woff2
     </IfModule>
 </Files>
 #If rewrite mod isn't enabled
-ErrorDocument 404 /pos_optima3/index.php?controller=404
+ErrorDocument 404 /optima/index.php?controller=404
 
 # ~~end~~ Do not remove this comment, Prestashop will keep automatically the code outside this comment when .htaccess will be generated again

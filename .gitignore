@@ -22,6 +22,7 @@ upload/*
 var/*
 vendor/*
 webservice/*
+/.htaccess
 
 #modules
 
